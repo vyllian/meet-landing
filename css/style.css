@@ -1,0 +1,193 @@
+
+:root{
+    --hedings-color: #28283D;
+    --text-color:#87879D;
+    --btn-color-1:#855FB1;
+    --btn-color-2:#4D96A9;
+}
+body{
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 1.44;
+    font-style: normal;
+}
+h1{
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--hedings-color);
+}
+h2{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: var(--hedings-color);
+}
+p{ 
+    font-size: 1.125rem;
+    color: var(--text-color);
+}
+a{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: #FFFFFF;
+}
+.header{
+    margin-bottom: 110px;
+}
+.header__logo{
+    padding: 80px 0 60px;
+}
+.header__info {
+    column-gap: 88px;
+    min-height: 360px;
+}
+.header__info-img-l, .header__info-img-r{
+    width: 395px;
+    height: 305px;
+}
+.header__info-img-l{
+    background: url(../assets/desktop/image-hero-left.png) no-repeat left 100% top 0 ;
+    align-self: flex-start;
+}
+.header__info-img-r{
+    background: url(../assets/desktop/image-hero-right.png) no-repeat right 100% bottom 0;
+    align-self: flex-end;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header__info-txt {
+    flex-direction: column;
+    row-gap: 35px;
+    align-self: flex-end;
+    max-width: 540px;
+    text-align: center;
+}
+.btn{
+    padding: 16px 40px;
+    background-color: var(--btn-color-1);
+    border-radius: 29px;
+    transition: background 0.5s ease;
+}
+.btn span{
+    margin-left: 4px;
+}
+.btn:hover{
+    background-color: #B18BDD;
+}
+.btn.aqua{
+    background-color: var(--btn-color-2);
+}
+.btn.aqua:hover{
+    background-color: #71C0D4;
+}
+.header__info-txt-links{
+    column-gap: 16px;
+    margin-bottom: 7px;
+}
+
+.header__info-txt-links a:last-child{
+    padding: 16px 30px;
+}
+.header__info-txt-links span{
+    color: #8FE3F9;
+}
+.meetings{
+    padding-top: 205px;
+    margin-bottom: 185px;
+    position: relative;
+}
+.container{
+    padding: 0 10px;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.meetings__photos{
+    column-gap: 30px;
+    margin-bottom: 80px;
+}
+.meetings img{
+    width: 255px;
+    height: 245px;
+    border-radius: 8px;
+}
+.meetings__txt{
+    max-width: 510px;
+    text-align: center;
+    margin: 0 auto;
+}
+.pre-heading{
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--btn-color-2);
+    margin-bottom: 16px;
+}
+.meetings h2{
+    margin-bottom: 32px;
+}
+.meetings::before, .footer::before{
+    content: "";
+    width: 1px;
+    height: 84px;
+    background-color: rgba(135, 135, 157, 0.25);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.meetings::after, .footer::after{
+    width: 56px;
+    height: 56px;
+    padding: 15px;
+    color:var(--text-color);
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.meetings::after{
+    content: "01"; 
+    top: 84px;
+}
+.footer{
+    padding-top: 115px;
+    padding-bottom: 105px;
+    background: url(../assets/desktop/image-footer.png) var(--btn-color-2) no-repeat center center;
+    position: relative;
+}
+.footer .container .flex{
+    column-gap: 100px;
+}
+.footer .container{
+    column-gap: 135px;
+}
+.footer h2, .footer p{
+    max-width: 340px;
+    color: #FAFAFA;
+}
+.footer .btn span{
+    color: #D9B8FF;
+}
+.footer::before{
+    transform: translate(-50%, -112px);
+}
+.footer::after{
+    content: "02";
+    top:0;
+    transform: translate(-50%, -50%);
+}
