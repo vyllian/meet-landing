@@ -33,7 +33,7 @@
         margin-bottom: 190px;
     }
     .meetings__photos{
-        column-gap: 10px;
+        gap: 10px;
         margin-bottom: 48px;
     }
     .meetings img{
@@ -64,13 +64,23 @@
         font-size: 1.125rem;
         line-height: 1.44;
     }
-
 }
+
 @media (max-width:843px) {
-    .header__info-img-l, .header__info-img-r{
-        width: 46vw;
+    .header__info-img-r{
+        display: none;
+    }
+    .header__info{
+        overflow-x: hidden;
+    }
+    .header__info-img-l{
+        background-image: url(../assets/tablet/image-hero.png);
+        background-position: center center;
+        width: 820px;
+        height: 303px;
     }
 }
+
 @media (max-width: 660px) {
     .container{
         padding: 0 5px;
@@ -88,13 +98,12 @@
         margin-bottom: 65px;
     }
     .header__info {
-        column-gap: 16px;
         row-gap: 48px;
     }
-    .header__info-img-l, .header__info-img-r{
+    .header__info-img-l{
+        width: 414px;
+        height: 153px;
         background-size: cover;
-        height: 155px;
-        width: min(45vw,202px);
     }
     .header__info-txt{
         order: 1;
@@ -139,16 +148,5 @@
     }
     .footer h2, .footer p{
         max-width: 320px;
-    }
-}
-
-
-
-@media (max-width:330px){
-    .header__info-img-l{
-        width: 200px;
-    }
-    .header__info-img-r{
-        display: none;
     }
 }
